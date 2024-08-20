@@ -51,16 +51,33 @@ main {
 
 .gallery img {
     width: 100%;
-    max-width: 300px; /* Adjust max-width as needed */
+    max-width: 300px; /* Adjust for larger screens */
     height: auto;
     margin: 10px;
     border-radius: 8px;
+}
+
+/* Ensures responsiveness for larger screens */
+@media (min-width: 768px) {
+    .gallery img {
+        max-width: 400px; /* Adjust for larger screens */
+    }
+}
+
+/* Additional responsive design for very large screens */
+@media (min-width: 1200px) {
+    .gallery img {
+        max-width: 500px; /* Further adjust for very large screens */
+    }
 }
 
 .video iframe {
     margin-top: 20px;
     border: none;
     border-radius: 8px;
+    width: 100%;
+    max-width: 560px; /* Limits iframe width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 footer {
@@ -71,11 +88,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-/* Responsive design adjustments */
-@media (min-width: 768px) {
-    .gallery img {
-        max-width: 400px; /* Adjust for larger screens */
-    }
 }
