@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
 header {
-    background-color: #f4a261;
+    background-color: #0077b6; /* Ocean blue */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -17,7 +18,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #264653;
+    background-color: #023e8a; /* Darker ocean blue */
 }
 
 nav ul li {
@@ -32,7 +33,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #2a9d8f;
+    background-color: #0096c7; /* Lighter ocean blue */
 }
 
 main {
@@ -42,7 +43,7 @@ main {
 }
 
 footer {
-    background-color: #264653;
+    background-color: #023e8a; /* Darker ocean blue */
     color: #fff;
     text-align: center;
     padding: 10px 0;
