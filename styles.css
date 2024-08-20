@@ -2,67 +2,66 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     color: #333;
+    background: #e0f7fa; /* Light ocean blue background */
 }
 
 header {
-    background-color: #0077b6; /* Ocean blue */
-    color: #fff;
+    background: #006064; /* Dark ocean blue */
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #023e8a; /* Darker ocean blue */
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    padding: 10px;
-    display: block;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background-color: #0096c7; /* Lighter ocean blue */
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
+    text-align: center;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.video iframe {
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
 }
 
 footer {
-    background-color: #023e8a; /* Darker ocean blue */
-    color: #fff;
+    background: #004d40; /* Even darker ocean blue */
+    color: white;
     text-align: center;
     padding: 10px 0;
     position: fixed;
-    bottom: 0;
     width: 100%;
-}
-
-iframe {
-    max-width: 100%;
-    height: auto;
-}
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
+    bottom: 0;
 }
