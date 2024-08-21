@@ -38,8 +38,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Existing styles remain unchanged */
+
 main {
     padding: 20px;
+    padding-bottom: 80px; /* Add padding at the bottom to prevent overlap with footer */
     text-align: center;
 }
 
@@ -71,13 +74,24 @@ main {
     }
 }
 
+.video {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    height: 0;
+    margin: 20px 0;
+    overflow: hidden;
+    background: #000; /* Optional: background color for empty space */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
 .video iframe {
-    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
     border-radius: 8px;
-    width: 100%;
-    max-width: 560px; /* Limits iframe width */
-    height: auto; /* Maintain aspect ratio */
 }
 
 footer {
@@ -88,4 +102,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0;
 }
