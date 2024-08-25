@@ -70,7 +70,7 @@ main {
 /* Additional responsive design for very large screens */
 @media (min-width: 1200px) {
     .gallery img {
-        max-width: 500px; /* Further adjust for very large screens */
+        max-width: 300px; /* Further adjust for very large screens */
     }
 }
 
